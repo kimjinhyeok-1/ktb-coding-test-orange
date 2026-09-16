@@ -19,8 +19,8 @@
 | 1주차 | BFS / DFS |
 | 2주차 | DP |
 | 3주차 | Heap / Greedy |
-| 4주차 | Binary Search / Two Pointer |
-| 5주차 | Dijkstra / Union-Find |
+| 4주차 | Binary Search  |
+| 5주차 | Two Pointer |
 
 ## 풀이 규칙
 
@@ -35,3 +35,41 @@
 ```text
 이름/weekXX-문제명
 ```
+
+## Git 사용 방법
+
+문제 풀이 시 아래 순서대로 진행합니다.
+
+### 1. 최신 main 브랜치 받기
+
+작업 시작 전에 항상 `main` 브랜치를 최신 상태로 맞춥니다.
+
+```bash
+git checkout main
+git pull origin main
+```
+### 2. 사용자별(혹은 주차별 - 이건 자유) 브랜치 생성
+
+```bash
+git checkout -b jay/week01
+```
+### 3. 문제 풀이 후 커밋
+```bash
+git add .
+git commit -m "solve: week01 타겟 넘버"
+```
+### 4. 깃허브에서 PR 생성
+### 5. PR에 간단하게 문제에 대한 리뷰 남기기 
+
+## 정리
+주차 시작 전에
+```bash
+git checkout main
+git pull origin main
+
+git checkout jinhyeok
+git merge main
+```
+
+만약 주차별로 관리하고 있다면 -b 붙여서 새로 만들고
+아니라면 그냥 브랜치만 이동해서 진행
